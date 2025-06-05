@@ -1,0 +1,88 @@
+/* Hero */
+.hero-section{
+    background-image: url("/img/hero/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 800px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+@media only screen and (min-width: 1439px) {
+.hero-section{
+    background-image: url("/img/hero/desk.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        height: 800px;
+}
+}
+/* Game Description */
+.game-section{
+    background-image: url("/img/game/mob.png");
+    background-repeat: no-repeat;
+    background-position: top 100px center;
+    background-size: contain;
+}
+.bird,
+.box,
+.mouse,
+.game-img{
+    display: none;
+}
+.game-text{
+    margin-top: 440px;
+}
+.span{
+    font-weight:700;
+}
+@media only screen and (min-width: 1439px) {
+    .game-section{
+background-image: none;
+
+} 
+.game-container{
+    position: relative;
+    height: 538px;
+}
+.game-img{
+    display: block;
+    margin-top: 36px;
+}
+.game-text{
+    margin-top: -460px;
+    margin-left: auto;
+    margin-right: 0;
+    width: 630px;
+}
+.bird{
+    display: block;
+    position: absolute;
+    left:490px;
+    bottom: -100px;
+    z-index: 2;
+}
+.box{
+    display: block;
+        position: absolute;
+        right: 190px;
+        bottom: -100px;
+        z-index: 3;
+}
+.mouse{
+    display: block;
+        position: absolute;
+        right: 70px;
+        bottom: -100px;
+        z-index: 4;
+}
+}
