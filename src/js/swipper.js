@@ -19,8 +19,8 @@ const swiperConfigs = [
     slideClass: 'gallery-swiper-slide',
     wrapperClass: 'gallery-swiper-wrapper',
     navigation: {
-      nextEl: '.gallery-nav .custom-next',
-      prevEl: '.gallery-nav .custom-prev',
+      nextEl: '.custom-navigation .custom-next',
+      prevEl: '.custom-navigation .custom-prev',
     },
   },
 ];
@@ -74,27 +74,28 @@ function initSwipers() {
 
     // === GALLERY SWIPER ===
     else if (config.selector === '.gallery-swiper') {
-        const swiper = new Swiper(container, {
+      const swiper = new Swiper(container, {
         modules: [Navigation],
-            breakpoints: {
-                374: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    centeredSlides: false,
-
-                },
-                1439: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                    centeredSlides: false,
-
-                },
-            },
+        breakpoints: {
+          374: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            centeredSlides: false,
+          },
+          1439: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            centeredSlides: false,
+          },
+        },
         loop: true,
         slideClass: config.slideClass,
         wrapperClass: config.wrapperClass,
         direction: 'horizontal',
-        navigation: config.navigation,
+        navigation: {
+          nextEl: '.custom-navigation .custom-next',
+          prevEl: '.custom-navigation .custom-prev',
+        },
       });
       swiperInstances[id] = swiper;
     }
