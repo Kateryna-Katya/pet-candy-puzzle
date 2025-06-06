@@ -48,7 +48,7 @@
 @media only screen and (min-width: 1439px) {
     .game-section{
 background-image: none;
-
+height: 700px;
 } 
 .game-container{
     position: relative;
@@ -85,4 +85,131 @@ background-image: none;
         bottom: -100px;
         z-index: 4;
 }
+}
+/*       Characters */
+.characters-tittle{
+    margin-bottom: 28px;
+}
+.characters-swiper-slide{
+    cursor: pointer;
+}
+.characters-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.characters-subtitle{
+margin-bottom: 12px;
+}
+.characters-subtitle-third{
+   margin-top: -14px;
+}
+.characters-text{
+    color: #4a2b5f;
+    text-align: center;
+}
+@media only screen and (min-width: 1439px) {
+  .characters-tittle{
+    margin-bottom: 36px;
+  }
+  .characters-swiper-wrapper{
+    gap: 20px;
+  }
+  .characters-swiper-slide{
+    max-width: 305px;
+    height: 492px;
+  }
+}
+/* Sweet Features */
+.sweet-section{
+    background-image: url("/img/sweet/mob.png");
+    background-repeat: no-repeat;
+        background-position: top 100px center;
+        background-size: contain;
+}
+.sweet-img{
+    display: none;
+}
+.sweet-list-one{
+    margin-top: 250px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sweet-item{
+    display: flex;
+    gap: 4px;
+    align-items: start;
+}
+.sweet-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.sweet-subtittle{
+    text-align: left;
+}
+.sweet-text{
+    width: 275px;
+}
+.sweet-list-two{
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+@media only screen and (min-width: 1439px) {
+ .sweet-section{
+    background-image: none;
+ }
+ .sweet-title{
+    margin-bottom: 36px;
+ }
+ .sweet-list-one{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 305px;
+ }
+ .sweet-container{
+    display: flex;
+    gap: 20px;
+        align-items: center;
+ }
+ .sweet-img{
+    display: block;
+
+ }
+ .sweet-list-two{
+    width: 305px;
+ }
+}
+/* Reviews */
+.reviews-title{
+    margin-bottom: 28px;
+}
+.reviews-swiper-slide{
+    cursor: pointer;
+    border-radius: 20px;
+        padding: 26px 33px;
+        background: #f0d4b2;
+        min-height: 226px;
+}
+.reviews-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+@media only screen and (min-width: 1439px) {
+  .reviews-title{
+    margin-bottom: 36px;
+  }
+  .reviews-swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .reviews-swiper-slide{
+        max-width: 413px;
+    }
 }
