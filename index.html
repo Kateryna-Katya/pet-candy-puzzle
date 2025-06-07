@@ -26,26 +26,65 @@
     <script type="module" crossorigin src="/pet-candy-puzzle/index.js"></script>
     <link rel="modulepreload" crossorigin href="/pet-candy-puzzle/assets/vendor-Sm41FR0M.js">
     <link rel="stylesheet" crossorigin href="/pet-candy-puzzle/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/pet-candy-puzzle/assets/index-Eyc53ul8.css">
+    <link rel="stylesheet" crossorigin href="/pet-candy-puzzle/assets/index-mVy0VmHE.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-   
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 24V21H36V24H0ZM0 13.5V10.5H36V13.5H0ZM0 3V0H36V3H0Z" fill="#FFF1E0" />  </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Game">Game Description</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Characters">Characters</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Sweet Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Benefits">Benefits</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Gallery">Gallery</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#Game">Game Description</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Characters">Characters</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Features">Sweet Features</a></li>
+    <li><a class="menu-list-item" href="index.html#Benefits">Benefits</a></li>
+    <li><a class="menu-list-item" href="index.html#Gallery">Gallery</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
       <!-- Hero -->
- <article class="hero-section">
+ <article class="hero-section" id="Home">
 <div class="container">
     <h1 class="visually-hidden">Pet Candy Puzzle</h1>
 </div>
  </article>
  <!-- Game Description -->
-<section class="game-section">
+<section class="game-section" id="Game">
     <div class="container game-container">
         <h2 class="game-title">Game Description</h2>
         <img class="game-img" src="/pet-candy-puzzle/assets/desk-Bp5msZ_p.png" alt="Pet Candy Puzzle" loading="lazy" width="414" height="459">
@@ -59,7 +98,7 @@
     </div>
 </section>
 <!--       Characters -->
-<section class="characters-section">
+<section class="characters-section" id="Characters">
     <div class="container">
         <h2 class="characters-tittle">Characters</h2>
         <div class="swiper characters-swiper">
@@ -89,7 +128,7 @@
     </div>
 </section>
 <!-- Sweet Features -->
-<section class="sweet-section">
+<section class="sweet-section" id="Features">
     <div class="container">
         <h2 class="sweet-title">Sweet Features</h2>
         <div class="sweet-container">
@@ -144,7 +183,7 @@
     </div>
 </section>
 <!-- Reviews -->
- <section class="reviews-section">
+ <section class="reviews-section" id="Benefits">
     <div class="container">
         <h2 class="reviews-title">Reviews</h2>
         <div class="swiper reviews-swiper">
@@ -197,14 +236,62 @@
         </div>
     </div>
  </section>
+ <!-- Gallery -->
+<section class="gallery-section" id="Gallery">
+    <div class="container gallery-container">
+        <h2 class="gallery-title">Gallery</h2>
+        <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper gallery-swiper-wrapper">
+                <div class="swiper-slide gallery-swiper-slide">
+<img class="gallery-img" src="/pet-candy-puzzle/assets/one-DWcFT6yx.png" alt="Pet Candy Puzzle" loading="lazy">
+             </div>
+            <div class="swiper-slide gallery-swiper-slide">
+                <img class="gallery-img" src="/pet-candy-puzzle/assets/two-CN7bdbaL.png" alt="Pet Candy Puzzle" loading="lazy">
+                </div>
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/pet-candy-puzzle/assets/three-DoJA5Q-R.png" alt="Pet Candy Puzzle" loading="lazy" >
+                 </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery-img" src="/pet-candy-puzzle/assets/four-BcsIywxl.png" alt="Pet Candy Puzzle" loading="lazy">
+                  </div>
+                        <div class="swiper-slide gallery-swiper-slide">
+                            <img class="gallery-img" src="/pet-candy-puzzle/assets/five-09Iy2iSP.png" alt="Pet Candy Puzzle" loading="lazy" >
+                    </div>
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img class="gallery-img" src="/pet-candy-puzzle/assets/six-DcznVEgf.png" alt="Pet Candy Puzzle" loading="lazy">
+                         </div>
+            </div>
+        </div>
+        <div class="custom-navigation">
+            <button class="custom-arrow custom-prev" aria-label="Previous slide">
+                <img class="left-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATjSURBVHgB7Zy9bxxFGMbfWd+egquLMCFSQrgQEyLFEnYXPiTOnYFIuIQK6NJhOjqfK6BL/gJChdLZReJQsS6SuOOQCJyIiyVJgYiLo/AJ+3wzvOPEJFGc3Z3dmd13b9+fZPnON3u+e56dnY9nZwAYhmEYhmEYhmEYhmEYhmEYhhl1BBBmvjXd2N3dXVBKvacAmvhhm/rvAkRPgeoIKZZrqrayvN4JoaSQNACFbw4Gg+/wYSvRAQou+9JfKqMRY0CMD985u6Ck+gEfnkl8kIBp6cnPJo9PbG/c31yHEkHKgPPvTrXx19f4cwjMOSSEmHvj1ZfEH3cfBFASyBigxcdr/SJkRrROnzgS3rn34BcoASTaAHvi/0/PH/ozZWgTPCgYB+JrGgNvYPs9nVBoDXAk/j69Ld8/GQSdHhCmsBpgIj6WC6Uctrb8rcNXb9wW+HwexwFhzGGNF7a3PwXiFGKAkfg44OrX+zOrt7prQRDunc3Xbv62UvfrM3EmeEJMA3FyN8BYfL8/uy/8kyzjpcUT3ueRx+P4AIiTqwG2xN+nVqt1Yt6kAcTJzQDb4o8KuRjgSvydnZ35yAICyBvo3ABX4uuZUpx6WIx5wxCI49QAl+LjbOlP8Gh6+nmgQctAHGcG5CB+bA9nOByuAXGcGEBBfPz/l6+vd0MgjnUDKIiP9KSUS1ACrBpARHxA8dtlOPs11ibjqIjvApcZtBUDRln8A7GYQWdOxConvsZiBp3JgEqK/xgrGXRqAyou/hNky6BTtQEs/jOkzqCNu6Es/oE0BmN7N5IZY1QDWPxoMIM+bJpBJzagqvP5rVazMb4zPo9KLeJ4oBlVFvVpY1xqNAJPZACHKQBzrTPN2mDsZwWRKVtw9cbtWTAgtg1g8R9yPeiGUomLUWVQpyYYEmkAi/80dZArUa/juKAJhkQaICXqmhh9NSOfgWdi1/Osf8FIA67d/HVJKdGGBKD80+PYk2lhjwZGlSG8GVPCuPbHtgFswkP0ohHlqYWYYh0wJNFArMom6DHK+bemvkiSQWMOYZxBGw3EPnh7alEI1U5SFhsPbJT92SQDk1EZiGEGfdI0CDKainBVE/Rthj6aBSmqMBXSZtDGc0FswoGkzqBTZcJswtNkyaBT5wF37v299vorL+PgI34pKZpw1Jdy7tipY1fC8K9/o8p28fWzWA6/1Bw+PQrE0fM/q7d+/xZSkikRq7gJunNxASffLkEGMmfCFTUhwB7P+3jmZ77zztptKaPcRcXPG6JQIV5ugn69f8nmfJfVRXpUTMBa8yWenRehBFhfJUnEhOquEybSReV1whRqQpqMNm+crQ+gUBMqv07YtQm8TjgBLk3gdcIJcWUCrxM2gJO1g8l1pbxtE+LWCQshQiBO7ntF2DIhyTphnDogf4tMIVuWmU7g1Yfy48nmxJ8bdze7WvjJ4xPncDJsFeLXCX9DfeuyQjdsMhmspSFNRps3hW7aZ1ITTNEZLU7IfQ/EKXzXREcm6Iz2k437m9wGJMGBCRdshCV5QGbfUFsmPLpHP1NMmCekds7VJpw+ceQf7BmcA/Pdc/Vl56ssAXkRkNs7GruN66+devGKkKIhIPFk2l5Giz2eH6FkFNoNjWNvVcp27SPl6W0qH29f7zKjZRiGYRiGYRiGYRiGYRiGYRiGsc1/vc5DTSVbnTEAAAAASUVORK5CYII=" alt="Left arrow" width="48" height="48" />
+            </button>
+        
+            <button class="custom-arrow custom-next " aria-label="Next slide">
+                <img class="right-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATjSURBVHgB7Zy9bxxFGMbfWd+egquLMCFSQrgQEyLFEnYXPiTOnYFIuIQK6NJhOjqfK6BL/gJChdLZReJQsS6SuOOQCJyIiyVJgYiLo/AJ+3wzvOPEJFGc3Z3dmd13b9+fZPnON3u+e56dnY9nZwAYhmEYhmEYhmEYhmEYhmEYhhl1BBBmvjXd2N3dXVBKvacAmvhhm/rvAkRPgeoIKZZrqrayvN4JoaSQNACFbw4Gg+/wYSvRAQou+9JfKqMRY0CMD985u6Ck+gEfnkl8kIBp6cnPJo9PbG/c31yHEkHKgPPvTrXx19f4cwjMOSSEmHvj1ZfEH3cfBFASyBigxcdr/SJkRrROnzgS3rn34BcoASTaAHvi/0/PH/ozZWgTPCgYB+JrGgNvYPs9nVBoDXAk/j69Ld8/GQSdHhCmsBpgIj6WC6Uctrb8rcNXb9wW+HwexwFhzGGNF7a3PwXiFGKAkfg44OrX+zOrt7prQRDunc3Xbv62UvfrM3EmeEJMA3FyN8BYfL8/uy/8kyzjpcUT3ueRx+P4AIiTqwG2xN+nVqt1Yt6kAcTJzQDb4o8KuRjgSvydnZ35yAICyBvo3ABX4uuZUpx6WIx5wxCI49QAl+LjbOlP8Gh6+nmgQctAHGcG5CB+bA9nOByuAXGcGEBBfPz/l6+vd0MgjnUDKIiP9KSUS1ACrBpARHxA8dtlOPs11ibjqIjvApcZtBUDRln8A7GYQWdOxConvsZiBp3JgEqK/xgrGXRqAyou/hNky6BTtQEs/jOkzqCNu6Es/oE0BmN7N5IZY1QDWPxoMIM+bJpBJzagqvP5rVazMb4zPo9KLeJ4oBlVFvVpY1xqNAJPZACHKQBzrTPN2mDsZwWRKVtw9cbtWTAgtg1g8R9yPeiGUomLUWVQpyYYEmkAi/80dZArUa/juKAJhkQaICXqmhh9NSOfgWdi1/Osf8FIA67d/HVJKdGGBKD80+PYk2lhjwZGlSG8GVPCuPbHtgFswkP0ohHlqYWYYh0wJNFArMom6DHK+bemvkiSQWMOYZxBGw3EPnh7alEI1U5SFhsPbJT92SQDk1EZiGEGfdI0CDKainBVE/Rthj6aBSmqMBXSZtDGc0FswoGkzqBTZcJswtNkyaBT5wF37v299vorL+PgI34pKZpw1Jdy7tipY1fC8K9/o8p28fWzWA6/1Bw+PQrE0fM/q7d+/xZSkikRq7gJunNxASffLkEGMmfCFTUhwB7P+3jmZ77zztptKaPcRcXPG6JQIV5ugn69f8nmfJfVRXpUTMBa8yWenRehBFhfJUnEhOquEybSReV1whRqQpqMNm+crQ+gUBMqv07YtQm8TjgBLk3gdcIJcWUCrxM2gJO1g8l1pbxtE+LWCQshQiBO7ntF2DIhyTphnDogf4tMIVuWmU7g1Yfy48nmxJ8bdze7WvjJ4xPncDJsFeLXCX9DfeuyQjdsMhmspSFNRps3hW7aZ1ITTNEZLU7IfQ/EKXzXREcm6Iz2k437m9wGJMGBCRdshCV5QGbfUFsmPLpHP1NMmCekds7VJpw+ceQf7BmcA/Pdc/Vl56ssAXkRkNs7GruN66+devGKkKIhIPFk2l5Giz2eH6FkFNoNjWNvVcp27SPl6W0qH29f7zKjZRiGYRiGYRiGYRiGYRiGYRiGsc1/vc5DTSVbnTEAAAAASUVORK5CYII=" alt="Right arrow" width="48" height="48" />
+            </button>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-  
+  <div class="container footer-container">
+    <ul class="footer-navigation">
+      <li class="footer-link">
+        <a class="footer-underline" href="Privacy Policy.html">Privacy policy</a>
+      </li>
+      <li class="footer-link">
+        <a class="footer-underline" href="Terms and Conditions.html">Terms and Conditions</a>
+      </li>
+
+      <li class="footer-link">
+        <a class="footer-underline" href="Cookies Policy.html">Cookies Policy</a>
+      </li>
+    </ul>
+    <p class="footer-text">© 2025 emeraldsugarpuzzle.com. All rights reserved</p>
   </div>
 </footer>
-
 
   </body>
 </html>
