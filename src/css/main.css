@@ -21,9 +21,9 @@
 .hero-section{
     background-image: url("/img/hero/desk.png");
         background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-        height: 800px;
+        background-position: top 80px center;
+        background-size: 100% 600px;
+        height: 700px; 
 }
 }
 /* Game Description */
