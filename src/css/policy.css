@@ -1,0 +1,69 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./header.css');
+
+.background-policy {
+    color: #1d1108;
+    text-align: left;
+}
+
+.policy-title {
+    margin-bottom: 20px;
+    font-family: "Fredoka", sans-serif;
+        font-weight: 400;
+        font-size: 38px;
+        text-align: center;
+        color: #079dd8;
+        margin-top: -20px;
+}
+.text-span {
+    font-weight: 700;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+    font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000;
+        text-align: left;
+    margin-top: 16px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 16px;
+}
+
+.mail-link {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1439px) {
+    .policy-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .policy-title {
+        margin-bottom: 36px;
+    }
+
+}

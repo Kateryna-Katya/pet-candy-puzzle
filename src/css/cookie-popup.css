@@ -8,7 +8,7 @@
     z-index: 1000;
     width: 374px;
     height: auto;
-    display: block;
+    display: none;
 }
 
 .cookie-class {
